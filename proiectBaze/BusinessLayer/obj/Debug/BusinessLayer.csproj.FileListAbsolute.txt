@@ -1,0 +1,9 @@
+C:\Users\Catalin\Documents\GitHub\5-dimineata\proiectBaze\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\Catalin\Documents\GitHub\5-dimineata\proiectBaze\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\Catalin\Documents\GitHub\5-dimineata\proiectBaze\BusinessLayer\bin\Debug\DataLayer.dll
+C:\Users\Catalin\Documents\GitHub\5-dimineata\proiectBaze\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Catalin\Documents\GitHub\5-dimineata\proiectBaze\BusinessLayer\bin\Debug\DataLayer.pdb
+C:\Users\Catalin\Documents\GitHub\5-dimineata\proiectBaze\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Catalin\Documents\GitHub\5-dimineata\proiectBaze\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Catalin\Documents\GitHub\5-dimineata\proiectBaze\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\Catalin\Documents\GitHub\5-dimineata\proiectBaze\BusinessLayer\obj\Debug\BusinessLayer.pdb
