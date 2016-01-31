@@ -8,3 +8,13 @@ C:\Users\Catalin\Documents\GitHub\5-dimineata\proiectBaze\DataLayer\bin\Debug\En
 C:\Users\Catalin\Documents\GitHub\5-dimineata\proiectBaze\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
 C:\Users\Catalin\Documents\GitHub\5-dimineata\proiectBaze\DataLayer\obj\Debug\DataLayer.dll
 C:\Users\Catalin\Documents\GitHub\5-dimineata\proiectBaze\DataLayer\obj\Debug\DataLayer.pdb
+C:\Users\Bogdan\Documents\GitHub\5-dimineata\proiectBaze\DataLayer\bin\Debug\DataLayer.dll.config
+C:\Users\Bogdan\Documents\GitHub\5-dimineata\proiectBaze\DataLayer\bin\Debug\DataLayer.dll
+C:\Users\Bogdan\Documents\GitHub\5-dimineata\proiectBaze\DataLayer\bin\Debug\DataLayer.pdb
+C:\Users\Bogdan\Documents\GitHub\5-dimineata\proiectBaze\DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\Bogdan\Documents\GitHub\5-dimineata\proiectBaze\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bogdan\Documents\GitHub\5-dimineata\proiectBaze\DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\Bogdan\Documents\GitHub\5-dimineata\proiectBaze\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bogdan\Documents\GitHub\5-dimineata\proiectBaze\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\Bogdan\Documents\GitHub\5-dimineata\proiectBaze\DataLayer\obj\Debug\DataLayer.dll
+C:\Users\Bogdan\Documents\GitHub\5-dimineata\proiectBaze\DataLayer\obj\Debug\DataLayer.pdb
