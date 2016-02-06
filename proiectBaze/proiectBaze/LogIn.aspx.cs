@@ -13,9 +13,14 @@ namespace proiectBaze
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<LogInn> users = Business.GetUsers();
-            GridView.DataSource = users;
-            GridView.DataBind();
+           // Data.InsertProfesor("Ivan", "nicusor", "077", "calc", "student", "bbn", "tipA", "b.bogdan", "3213");
+         //   Data.DeleteAdmin(3);
+            
+        }
+
+        protected void GridView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -13,6 +13,20 @@ namespace BusinessLayer
         {
             return Data.GetUsers();
         }
+        public static List<Student> GetStudent()
+        {
+            return Data.GetStudent();
+        }
+
+        public static List<Grupe> GetGrupe()
+        {
+            return Data.GetGrupe();
+        }
+
+        public static void LogIn()
+        {
+
+        }
 
 
     }

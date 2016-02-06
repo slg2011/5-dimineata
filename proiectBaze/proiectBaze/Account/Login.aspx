@@ -17,16 +17,15 @@
                     <ol>
                         <li>
                             <asp:Label runat="server" AssociatedControlID="UserName">User name</asp:Label>
-                            <asp:TextBox runat="server" ID="UserName" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName" CssClass="field-validation-error" ErrorMessage="The user name field is required." />
                         </li>
                         <li>
                             <asp:Label runat="server" AssociatedControlID="Password">Password</asp:Label>
-                            <asp:TextBox runat="server" ID="Password" TextMode="Password" />
+                            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="field-validation-error" ErrorMessage="The password field is required." />
                         </li>
                         <li>
-                            <asp:CheckBox runat="server" ID="RememberMe" />
+                            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                             <asp:Label runat="server" AssociatedControlID="RememberMe" CssClass="checkbox">Remember me?</asp:Label>
                         </li>
                     </ol>
@@ -41,7 +40,5 @@
     </section>
 
     <section id="socialLoginForm">
-        <h2>Use another service to log in.</h2>
-        <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
     </section>
 </asp:Content>
