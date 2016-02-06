@@ -137,6 +137,8 @@ namespace DataLayer
                 }
              }
         }
+
+        //Grupa
         public static List<Grupe> GetGrupe()
         {
             List<Grupe> grupa = null;
@@ -147,15 +149,38 @@ namespace DataLayer
             }
             return grupa;
         }
-        public static List<Note> GetNote()
+        public static void InsertGrupe(string numegrupa, int an, int nr, string indrumator)
         {
-            List<Note> note = null;
             using (ProiectBazeContext ctx = new ProiectBazeContext())
             {
-                 note = (from x in ctx.Notes
-                        select x).ToList();
+                Grupe grupa = new Grupe()
+                {
+                    //id_grupa = id,
+                    nume_grupa = numegrupa,
+                    an = an,
+                    indrumator = indrumator,
+                    nr_std = nr
+                };
+
+                ctx.Grupes.Add(grupa);
+                ctx.SaveChanges();
+
             }
-            return note;
+        }
+        public static void DeleteGrupa(int id)
+        {
+            using (ProiectBazeContext ctx = new ProiectBazeContext())
+            {
+                List<Grupe> grupa = GetGrupe();
+
+                var x = (from b in ctx.Grupes where b.id_grupa == id select b).FirstOrDefault();
+                if (x != null)
+                {
+
+                    ctx.Grupes.Remove(x);
+                    ctx.SaveChanges();
+                }
+            }
         }
 
         public static List<Prof_date> GetDateProf()
@@ -203,7 +228,16 @@ namespace DataLayer
                
             }
         }
-
+        public static void DeleteProfesor(int id)
+        {
+            using (ProiectBazeContext ctx = new ProiectBazeContext())
+            {
+                var delProf = (from x in ctx.Profesors where x.id_prof == id select x).FirstOrDefault();
+                ctx.Profesors.Remove(x);
+                ctx.SaveChanges();
+            }
+        }
+        //Studenti
         public static List<Student> GetStudent()
         {
             List<Student> student = null;
@@ -215,44 +249,6 @@ namespace DataLayer
             return student;
         }
 
-        //Insert grupa
-        public static void InsertGrupe(string numegrupa, int an, int nr, string indrumator)
-        {
-            using (ProiectBazeContext ctx = new ProiectBazeContext())
-            {
-                Grupe grupa = new Grupe()
-                {
-                    //id_grupa = id,
-                    nume_grupa = numegrupa,
-                    an = an,
-                    indrumator = indrumator,
-                    nr_std = nr
-                };
-
-                ctx.Grupes.Add(grupa);
-                ctx.SaveChanges();
-
-            }
-        }
-
-        //Delete grupa
-        public static void DeleteGrupa(int id)
-        {
-            using (ProiectBazeContext ctx = new ProiectBazeContext())
-            {
-                List<Grupe> grupa = GetGrupe();
-
-                var x = (from b in ctx.Grupes where b.id_grupa == id select b).FirstOrDefault();
-                if (x != null)
-                {
-
-                    ctx.Grupes.Remove(x);
-                    ctx.SaveChanges();
-                }
-            }
-        }
-
-        //Insert studenti (are o problema cu login ceva legat de foreinkey)
         public static void InserStudent(string nume, string prenume,string initiala,string cnp,string adresa,string telefon,string tip,float taxa,string numegrupa,int credite,string email)
         {
             using (ProiectBazeContext ctx = new ProiectBazeContext())
@@ -278,9 +274,6 @@ namespace DataLayer
 
             }
         }
-
-
-        //Delete studenti merge
         public static void DeleteStudenti(int id)
         {
             using (ProiectBazeContext ctx = new ProiectBazeContext())
@@ -296,6 +289,17 @@ namespace DataLayer
                 }
             }
         }
+
+
+
+
+        //public static void aifsarenoteStudent(string name)
+        //{
+        //    using (ProiectBazeContext ctx = new ProiectBazeContext())
+        //    {
+        //        var noteStudent = from b in ctx.Students where b.Nume == name 
+        //    }
+        //}
 
     };
 
